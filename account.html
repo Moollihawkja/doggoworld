@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+	</head>
+
+	<body>
+		{{^private}}
+			<script>
+				location.href = '/~/doggorobot/index'
+			</script>
+		{{/private}}
+
+		<nav>
+			<a href='signup'>Sign Up</a>
+			<a href='login'>Login</a>
+			<a onclick='logout()'>Log out</a>
+		</nav>
+		<main>
+			<div>
+				<h1>My Account</h1>
+				<h2>{{username}}</h2>
+				<img src='{{avatar}}' style='width:100px;'>
+			</div>
+		</main>
+		<footer>
+			© 2021 The Doggo Group
+		</footer>
+	</body>
+
+</html>

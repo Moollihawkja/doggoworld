@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+	</head>
+
+	<body>
+		<nav>
+			<a href='signup'>Sign Up</a>
+			<a onclick='logout()'>Log out</a>
+		</nav>
+		<main>
+			<div>
+				<h1>Login</h1>
+				<form action='/~/doggorobot/login' method='POST' enctype='multipart/form-data'>
+					<!-- Username and password are mandatory to log in -->
+					<input type='email' name='username' placeholder='Email' required>
+					<input type='password' name='password' placeholder='Password' required>
+
+					<input type='submit' value='Log In'>
+
+					<!-- Set a redirect page that a user goes to after logging in -->
+					<input type='hidden' name='redirecturl' value='/~/doggorobot/account'>
+				</form>
+			</div>
+		</main>
+		<footer>
+			© 2021 The Doggo Group
+		</footer>
+	</body>
+
+</html>
